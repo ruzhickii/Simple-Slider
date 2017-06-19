@@ -1,0 +1,30 @@
+html, body, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+#gallery{
+    width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gallery .photos{
+    position: relative;
+    height: 490px;
+}
+
+#gallery .photos img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#gallery .photos img.showed{
+    opacity: 1;
+}
